@@ -3,7 +3,6 @@ def findPyTriplet(arr):
     current_sum = 0
     arr.sort()
     arr = arr[::-1]
-    print(arr)
     for i in range(0, len(arr) - 1):
         left = i + 1
         right = len(arr) - 1
