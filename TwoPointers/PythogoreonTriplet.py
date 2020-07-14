@@ -11,9 +11,7 @@ def findPyTriplet(arr):
             current_sum = arr[left] ** 2 + arr[right] ** 2
             print (current_sum, arr[i]**2)
             if(current_sum == arr[i] ** 2):
-                triplet.append(arr[i])
-                triplet.append(arr[left])
-                triplet.append(arr[right])
+                triplet.append([arr[i], arr[left], arr[right]])
                 return triplet
             elif (current_sum > arr[i]):
                 right -= 1
